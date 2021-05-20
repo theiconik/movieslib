@@ -68,6 +68,17 @@ body {
   opacity: 0.5;
 }
 
+input {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+.input-wrapper .input-box{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 input:focus {
   outline: none;
 }
@@ -115,6 +126,10 @@ header .nav-links li {
 
 header .nav-links li:last-child {
   margin-right: 0;
+}
+
+span.btn:hover {
+  background-color:#e50914;
 }
 
 /* Add Page */
