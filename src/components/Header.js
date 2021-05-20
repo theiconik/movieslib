@@ -20,7 +20,7 @@ export default function Header() {
                   </li>
 
                   <li>
-                     <Link to="/add" className="btn">Add New</Link>
+                     <Link to="/add" className="btn">Add +</Link>
                   </li>
                </ul>
             </div>
