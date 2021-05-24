@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 
+@font-face {
+  font-family: 'Netflix Sans Regular';
+  src: url('NetflixSansRegular.woff') format('woff');
+}
+
 :root {
   --primary: #221f1f;
   --secondary: #e50914;
@@ -7,7 +12,7 @@
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Netflix Sans Regular", sans-serif;
   padding: 0;
   margin: 0;
   background-color: #221f1f;
