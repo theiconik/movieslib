@@ -10,6 +10,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #221f1f;
 }
 
 .container {
@@ -142,12 +143,13 @@ span.btn:hover {
 
 .add-content .input-wrapper input {
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--white);
   padding: 10px;
   border-radius: 5px;
   border: none;
-  color: var(--white);
+  color: var(--primary);
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .results {
@@ -184,7 +186,7 @@ span.btn:hover {
 
 .result-card .info .title {
   font-size: 1.25rem;
-  color: var(--primary);
+  color: var(--white);
   font-weight: 600;
   margin: 0;
 }
@@ -192,7 +194,7 @@ span.btn:hover {
 .result-card .info .release-date {
   font-size: 1.25rem;
   font-weight: 300;
-  color: var(--primary);
+  color: var(--white);
   margin: 0;
 }
 
