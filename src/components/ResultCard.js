@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
-
 export default function ResultCard({ movie }) {
-  const { addMovieToWatchlist, watchlist, watched } = useContext(GlobalContext);
-  let storedMovie = watchlist.find(o => o.id === movie.id);
-  let storedMovieWatched = watched.find(o => o.id === movie.id);
+  const { addMovieToWatchlist, addMovieToWatched, watchlist, watched } =
+    useContext(GlobalContext);
+  let storedMovie = watchlist.find((o) => o.id === movie.id);
+  let storedMovieWatched = watched.find((o) => o.id === movie.id);
 
   const watchlistDisabled = storedMovie || storedMovieWatched ? true : false;
+
+  const watchedDisabled = storedMovieWatched ? true : false;
 
   return (
     <div className="result-card" style={{ margin: "3rem" }}>
@@ -29,9 +31,21 @@ export default function ResultCard({ movie }) {
           </h4>
         </div>
 
-        <div className="controls">
-          <button disabled={watchlistDisabled} className="btn" onClick={() => addMovieToWatchlist(movie)}>
-            Add to watchlist
+        <div className="controls" >
+          <button
+            disabled={watchlistDisabled}
+            className="btn"
+            onClick={() => addMovieToWatchlist(movie)}
+          >
+            Add to Watchlist
+          </button>
+
+          <button
+            disabled={watchedDisabled}
+            className="btn"
+            onClick={() => addMovieToWatched(movie)}
+          >
+            Add to Watched
           </button>
         </div>
       </div>
