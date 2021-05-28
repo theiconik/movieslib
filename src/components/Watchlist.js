@@ -11,6 +11,8 @@ export default function Watchlist() {
         <div className="container">
           <div className="header">
             <h1 className="heading">My Watchlist</h1>
+
+            <span className="count-pill">{watchlist.length}</span>
           </div>
 
           {watchlist.length > 0 ? (
