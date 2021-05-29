@@ -10,7 +10,7 @@ export default function Add() {
     setQuery(e.target.value);
 
     fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false&query=${e.target.value}`
+      `https://api.themoviedb.org/3/search/movie?api_key=d0e92860093cd5a9194874ea46dbab97&language=en-US&page=1&include_adult=false&query=${e.target.value}`
     )
       .then((res) => res.json())
       .then((data) => {
